@@ -2,21 +2,27 @@
 
 ## Step 0
 
-Créer un dossier custom
+Créer un dossier `custom`
 
 ```bash
 mkdir custom
 ```
 
-Ajouter un fichier
+Dans le dossier `custom` créer le fichier `mybootstrap.scss`
 
 ```bash
 touch custom/mybootstrap.scss
 ```
 
+---
+
 ## Step 1
 
-Copier le dossier scss depuis les fichier source de Bootstrap 5
+Copier le dossier scss depuis les fichiers source de [Bootstrap 5](https://www.dropbox.com/s/q3hj2vzhkm6kkwl/Screenshot%202020-06-30%2012.46.45.png?dl=0)
+
+![](https://wptemplates.pehaa.com/assets/alyra/b5source.png)
+
+---
 
 ## Step 2
 
@@ -24,6 +30,7 @@ Configurer Sass Live Compiler
 
 - créer un dossier `.vscode`
 - créer un fichier `settings.json`
+- ajouter `"scss/**"` dans `"liveSassCompile.settings.excludeList"` (comme ci-dessus)
 
 ```
 {
