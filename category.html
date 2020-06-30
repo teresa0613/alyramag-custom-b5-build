@@ -7,12 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300, 400,700|Inconsolata:400,700"
-      rel="stylesheet"
-    />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -27,450 +21,413 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: Montserrat;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-family: Libre Baskerville, serif;
-        font-weight: 300;
-      }
-    </style>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="wrap">
-      <header role="banner">
-        <div class="container logo-wrap">
-          <div class="row pt-5">
-            <div class="col-12 text-center">
+    <header class="text-center py-5">
+      <a class="site-logo h1 link-dark text-decoration-none" href="index.html"
+        >AlyraMag</a
+      >
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top mb-4">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="category.html">Travel</a>
+            </li>
+
+            <li class="nav-item dropdown">
               <a
-                class="absolute-toggle d-block d-md-none"
-                data-toggle="collapse"
-                href="#navbarMenu"
-                role="button"
+                class="nav-link active dropdown-toggle"
+                href="category.html"
+                id="dropdown05"
+                data-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false"
-                aria-controls="navbarMenu"
-                ><span class="burger-lines"></span
-              ></a>
-              <h1 class="site-logo">
+                >Categories</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown05">
+                <a class="dropdown-item" href="category.html">Lifestyle</a>
+                <a class="dropdown-item" href="category.html">Food</a>
+                <a class="dropdown-item" href="category.html">Adventure</a>
+                <a class="dropdown-item" href="category.html">Travel</a>
+                <a class="dropdown-item" href="category.html">Business</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- END header -->
+
+    <div class="container mb-4">
+      <!-- END section -->
+
+      <h1 class="h2 mb-4">Category: Lifestyle</h1>
+      <div class="row blog-entries">
+        <div class="col-md-12 col-lg-9 main-content">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <a href="blog-single.html" class="col-md-4">
+              <img
+                src="images/img_1.jpg"
+                class="img-fluid"
+                alt="Image placeholder"
+              />
+            </a>
+            <div class="col-md p-3 p-lg-4 d-flex flex-column">
+              <h2 class="h5 mb-0">
                 <a
-                  class="d-inline-block link-dark text-decoration-none mb-4"
-                  href="index.html"
-                  >AlyraMag</a
+                  class="text-decoration-none text-reset"
+                  href="blog-single.html"
+                  >How to Find the Video Games of Your Youth</a
                 >
-              </h1>
+              </h2>
+              <div class="mt-auto text-muted">March 15, 2020</div>
+            </div>
+          </div>
+
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <a href="blog-single.html" class="col-md-4">
+              <img
+                src="images/img_2.jpg"
+                class="img-fluid"
+                alt="Image placeholder"
+              />
+            </a>
+            <div class="col-md p-3 p-lg-4 d-flex flex-column">
+              <h2 class="h5 mb-0">
+                <a
+                  class="text-decoration-none text-reset"
+                  href="blog-single.html"
+                  >How to Find the Video Games of Your Youth</a
+                >
+              </h2>
+              <div class="mt-auto text-muted">March 15, 2020</div>
+            </div>
+          </div>
+
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <a href="blog-single.html" class="col-md-4">
+              <img
+                src="images/img_3.jpg"
+                class="img-fluid"
+                alt="Image placeholder"
+              />
+            </a>
+            <div class="col-md p-3 p-lg-4 d-flex flex-column">
+              <h2 class="h5 mb-0">
+                <a
+                  class="text-decoration-none text-reset"
+                  href="blog-single.html"
+                  >How to Find the Video Games of Your Youth</a
+                >
+              </h2>
+              <div class="mt-auto text-muted">March 15, 2020</div>
+            </div>
+          </div>
+
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <a href="blog-single.html" class="col-md-4">
+              <img
+                src="images/img_4.jpg"
+                class="img-fluid"
+                alt="Image placeholder"
+              />
+            </a>
+            <div class="col-md p-3 p-lg-4 d-flex flex-column">
+              <h2 class="h5 mb-0">
+                <a
+                  class="text-decoration-none text-reset"
+                  href="blog-single.html"
+                  >How to Find the Video Games of Your Youth</a
+                >
+              </h2>
+              <div class="mt-auto text-muted">March 15, 2020</div>
+            </div>
+          </div>
+
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <a href="blog-single.html" class="col-md-4">
+              <img
+                src="images/img_5.jpg"
+                class="img-fluid"
+                alt="Image placeholder"
+              />
+            </a>
+            <div class="col-md p-3 p-lg-4 d-flex flex-column">
+              <h2 class="h5 mb-0">
+                <a
+                  class="text-decoration-none text-reset"
+                  href="blog-single.html"
+                  >How to Find the Video Games of Your Youth</a
+                >
+              </h2>
+              <div class="mt-auto text-muted">March 15, 2020</div>
+            </div>
+          </div>
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <a href="blog-single.html" class="col-md-4">
+              <img
+                src="images/img_8.jpg"
+                class="img-fluid"
+                alt="Image placeholder"
+              />
+            </a>
+            <div class="col-md p-3 p-lg-4 d-flex flex-column">
+              <h2 class="h5 mb-0">
+                <a
+                  class="text-decoration-none text-reset"
+                  href="blog-single.html"
+                  >How to Find the Video Games of Your Youth</a
+                >
+              </h2>
+              <div class="mt-auto text-muted">March 15, 2020</div>
             </div>
           </div>
         </div>
-      </header>
-      <nav
-        class="navbar navbar-expand-sm navbar-light bg-light sticky-top mb-4"
-      >
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarMenu"
-            aria-controls="navbarMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link active" href="category.html">Travel</a>
-              </li>
+        <!-- END main-content -->
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link active dropdown-toggle"
-                  href="category.html"
-                  id="dropdown05"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Categories</a
-                >
-                <div class="dropdown-menu" aria-labelledby="dropdown05">
-                  <a class="dropdown-item" href="category.html">Lifestyle</a>
-                  <a class="dropdown-item" href="category.html">Food</a>
-                  <a class="dropdown-item" href="category.html">Adventure</a>
-                  <a class="dropdown-item" href="category.html">Travel</a>
-                  <a class="dropdown-item" href="category.html">Business</a>
+        <div class="col-md-12 col-lg-3 sidebar">
+          <form action="#" class="search-form mb-4">
+            <div class="input-group d-flex">
+              <span class="input-group-text"
+                ><i class="icon fa fa-search"></i
+              ></span>
+              <input
+                type="search"
+                class="form-control"
+                name="s"
+                placeholder="Search here..."
+              />
+            </div>
+          </form>
+
+          <!-- END sidebar-box -->
+          <div class="shadow p-3 text-center mb-4">
+            <img
+              src="images/person_1.jpg"
+              class="img-fluid rounded-pill position-relative mb-4"
+              alt=""
+              width="128"
+            />
+
+            <h2 class="h5">David Craig</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Exercitationem facilis sunt repellendus excepturi beatae porro
+              debitis voluptate nulla quo veniam fuga sit molestias minus.
+            </p>
+            <p>
+              <a href="#" class="btn btn-dark btn-sm rounded">Read my bio</a>
+            </p>
+            <p class="social">
+              <a href="#" class="p-2 link-dark"
+                ><span class="fa fa-facebook"></span
+              ></a>
+              <a href="#" class="p-2 link-dark"
+                ><span class="fa fa-twitter"></span
+              ></a>
+              <a href="#" class="p-2 link-dark"
+                ><span class="fa fa-instagram"></span
+              ></a>
+              <a href="#" class="p-2 link-dark"
+                ><span class="fa fa-youtube-play"></span
+              ></a>
+            </p>
+          </div>
+          <!-- END sidebar-box -->
+          <div class="p-3 shadow mb-4">
+            <h2 class="h5">Popular Posts</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0 py-2 d-flex">
+                <a class="mr-2" href="#">
+                  <img
+                    src="images/img_2.jpg"
+                    class="img-fluid"
+                    alt="Image placeholder"
+                    width="200"
+                  />
+                </a>
+                <div>
+                  <small>March 15, 2018 </small>
+                  <h3 class="h6">
+                    <small>How to Find the Video Games of Your Youth</small>
+                  </h3>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <li class="list-group-item px-0 py-2 d-flex">
+                <a class="mr-2" href="#">
+                  <img
+                    src="images/img_4.jpg"
+                    class="img-fluid"
+                    alt="Image placeholder"
+                    width="200"
+                  />
+                </a>
+                <div>
+                  <small>March 15, 2018 </small>
+                  <h3 class="h6">
+                    <small>How to Find the Video Games of Your Youth</small>
+                  </h3>
+                </div>
+              </li>
+              <li class="list-group-item px-0 py-2 d-flex">
+                <a class="mr-2" href="#">
+                  <img
+                    src="images/img_12.jpg"
+                    class="img-fluid"
+                    alt="Image placeholder"
+                    width="200"
+                  />
+                </a>
+                <div>
+                  <small>March 15, 2018 </small>
+                  <h3 class="h6">
+                    <small>How to Find the Video Games of Your Youth</small>
+                  </h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- END sidebar-box -->
+
+          <div class="p-3 shadow mb-4">
+            <h2 class="h5">Categories</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0">
+                <a
+                  class="d-flex justify-content-between text-decoration-none link-dark"
+                  href="#"
+                  ><b>Food</b><span>(12)</span></a
+                >
+              </li>
+              <li class="list-group-item px-0">
+                <a
+                  class="d-flex justify-content-between text-decoration-none link-dark"
+                  href="#"
+                  ><b>Travel</b> <span>(22)</span></a
+                >
+              </li>
+              <li class="list-group-item px-0">
+                <a
+                  class="d-flex justify-content-between text-decoration-none link-dark"
+                  href="#"
+                  ><b>Lifestyle</b> <span>(37)</span></a
+                >
+              </li>
+              <li class="list-group-item px-0">
+                <a
+                  class="d-flex justify-content-between text-decoration-none link-dark"
+                  href="#"
+                  ><b>Business</b> <span>(42)</span></a
+                >
+              </li>
+              <li class="list-group-item px-0">
+                <a
+                  class="d-flex justify-content-between text-decoration-none link-dark"
+                  href="#"
+                  ><b>Adventure</b> <span>(14)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- END sidebar-box -->
+
+          <div class="p-3 shadow">
+            <h3 class="h5">Tags</h3>
+            <ul class="list-unstyled d-flex flex-wrap">
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Travel</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Adventure</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Food</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Lifestyle</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Business</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Freelancing</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Travel</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Adventure</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Food</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Lifestyle</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Business</a>
+              </li>
+              <li>
+                <a class="m-1 btn btn-sm btn-secondary" href="#">Freelancing</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-
-      <!-- END header -->
-
-      <div class="container mb-4">
-        <!-- END section -->
-
-        <h1 class="h2 mb-4">Category: Lifestyle</h1>
-        <div class="row blog-entries">
-          <div class="col-md-12 col-lg-9 main-content">
-            <div
-              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            >
-              <a href="blog-single.html" class="col-md-4">
-                <img
-                  src="images/img_1.jpg"
-                  class="img-fluid"
-                  alt="Image placeholder"
-                />
-              </a>
-              <div class="col-md p-3 p-lg-4 d-flex flex-column">
-                <h2 class="h5 mb-0">
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="blog-single.html"
-                    >How to Find the Video Games of Your Youth</a
-                  >
-                </h2>
-                <div class="mt-auto text-muted">March 15, 2020</div>
-              </div>
-            </div>
-
-            <div
-              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            >
-              <a href="blog-single.html" class="col-md-4">
-                <img
-                  src="images/img_2.jpg"
-                  class="img-fluid"
-                  alt="Image placeholder"
-                />
-              </a>
-              <div class="col-md p-3 p-lg-4 d-flex flex-column">
-                <h2 class="h5 mb-0">
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="blog-single.html"
-                    >How to Find the Video Games of Your Youth</a
-                  >
-                </h2>
-                <div class="mt-auto text-muted">March 15, 2020</div>
-              </div>
-            </div>
-
-            <div
-              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            >
-              <a href="blog-single.html" class="col-md-4">
-                <img
-                  src="images/img_3.jpg"
-                  class="img-fluid"
-                  alt="Image placeholder"
-                />
-              </a>
-              <div class="col-md p-3 p-lg-4 d-flex flex-column">
-                <h2 class="h5 mb-0">
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="blog-single.html"
-                    >How to Find the Video Games of Your Youth</a
-                  >
-                </h2>
-                <div class="mt-auto text-muted">March 15, 2020</div>
-              </div>
-            </div>
-
-            <div
-              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            >
-              <a href="blog-single.html" class="col-md-4">
-                <img
-                  src="images/img_4.jpg"
-                  class="img-fluid"
-                  alt="Image placeholder"
-                />
-              </a>
-              <div class="col-md p-3 p-lg-4 d-flex flex-column">
-                <h2 class="h5 mb-0">
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="blog-single.html"
-                    >How to Find the Video Games of Your Youth</a
-                  >
-                </h2>
-                <div class="mt-auto text-muted">March 15, 2020</div>
-              </div>
-            </div>
-
-            <div
-              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            >
-              <a href="blog-single.html" class="col-md-4">
-                <img
-                  src="images/img_5.jpg"
-                  class="img-fluid"
-                  alt="Image placeholder"
-                />
-              </a>
-              <div class="col-md p-3 p-lg-4 d-flex flex-column">
-                <h2 class="h5 mb-0">
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="blog-single.html"
-                    >How to Find the Video Games of Your Youth</a
-                  >
-                </h2>
-                <div class="mt-auto text-muted">March 15, 2020</div>
-              </div>
-            </div>
-            <div
-              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            >
-              <a href="blog-single.html" class="col-md-4">
-                <img
-                  src="images/img_8.jpg"
-                  class="img-fluid"
-                  alt="Image placeholder"
-                />
-              </a>
-              <div class="col-md p-3 p-lg-4 d-flex flex-column">
-                <h2 class="h5 mb-0">
-                  <a
-                    class="text-decoration-none text-reset"
-                    href="blog-single.html"
-                    >How to Find the Video Games of Your Youth</a
-                  >
-                </h2>
-                <div class="mt-auto text-muted">March 15, 2020</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- END main-content -->
-
-          <div class="col-md-12 col-lg-3 sidebar">
-            <form action="#" class="search-form mb-4">
-              <div class="input-group d-flex">
-                <span class="input-group-text"
-                  ><i class="icon fa fa-search"></i
-                ></span>
-                <input
-                  type="search"
-                  class="form-control"
-                  name="s"
-                  placeholder="Search here..."
-                />
-              </div>
-            </form>
-
-            <!-- END sidebar-box -->
-            <div class="shadow p-3 text-center mb-4">
-              <img
-                src="images/person_1.jpg"
-                class="img-fluid rounded-pill position-relative mb-4"
-                alt=""
-                width="128"
-              />
-
-              <h2 class="h5">David Craig</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Exercitationem facilis sunt repellendus excepturi beatae porro
-                debitis voluptate nulla quo veniam fuga sit molestias minus.
-              </p>
-              <p>
-                <a href="#" class="btn btn-dark btn-sm rounded">Read my bio</a>
-              </p>
-              <p class="social">
-                <a href="#" class="p-2 link-dark"
-                  ><span class="fa fa-facebook"></span
-                ></a>
-                <a href="#" class="p-2 link-dark"
-                  ><span class="fa fa-twitter"></span
-                ></a>
-                <a href="#" class="p-2 link-dark"
-                  ><span class="fa fa-instagram"></span
-                ></a>
-                <a href="#" class="p-2 link-dark"
-                  ><span class="fa fa-youtube-play"></span
-                ></a>
-              </p>
-            </div>
-            <!-- END sidebar-box -->
-            <div class="p-3 shadow mb-4">
-              <h2 class="h5">Popular Posts</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item px-0 py-2 d-flex">
-                  <a class="mr-2" href="#">
-                    <img
-                      src="images/img_2.jpg"
-                      class="img-fluid"
-                      alt="Image placeholder"
-                      width="200"
-                    />
-                  </a>
-                  <div>
-                    <small>March 15, 2018 </small>
-                    <h3 class="h6">
-                      <small>How to Find the Video Games of Your Youth</small>
-                    </h3>
-                  </div>
-                </li>
-                <li class="list-group-item px-0 py-2 d-flex">
-                  <a class="mr-2" href="#">
-                    <img
-                      src="images/img_4.jpg"
-                      class="img-fluid"
-                      alt="Image placeholder"
-                      width="200"
-                    />
-                  </a>
-                  <div>
-                    <small>March 15, 2018 </small>
-                    <h3 class="h6">
-                      <small>How to Find the Video Games of Your Youth</small>
-                    </h3>
-                  </div>
-                </li>
-                <li class="list-group-item px-0 py-2 d-flex">
-                  <a class="mr-2" href="#">
-                    <img
-                      src="images/img_12.jpg"
-                      class="img-fluid"
-                      alt="Image placeholder"
-                      width="200"
-                    />
-                  </a>
-                  <div>
-                    <small>March 15, 2018 </small>
-                    <h3 class="h6">
-                      <small>How to Find the Video Games of Your Youth</small>
-                    </h3>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- END sidebar-box -->
-
-            <div class="p-3 shadow mb-4">
-              <h2 class="h5">Categories</h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item px-0">
-                  <a
-                    class="d-flex justify-content-between text-decoration-none link-dark"
-                    href="#"
-                    ><b>Food</b><span>(12)</span></a
-                  >
-                </li>
-                <li class="list-group-item px-0">
-                  <a
-                    class="d-flex justify-content-between text-decoration-none link-dark"
-                    href="#"
-                    ><b>Travel</b> <span>(22)</span></a
-                  >
-                </li>
-                <li class="list-group-item px-0">
-                  <a
-                    class="d-flex justify-content-between text-decoration-none link-dark"
-                    href="#"
-                    ><b>Lifestyle</b> <span>(37)</span></a
-                  >
-                </li>
-                <li class="list-group-item px-0">
-                  <a
-                    class="d-flex justify-content-between text-decoration-none link-dark"
-                    href="#"
-                    ><b>Business</b> <span>(42)</span></a
-                  >
-                </li>
-                <li class="list-group-item px-0">
-                  <a
-                    class="d-flex justify-content-between text-decoration-none link-dark"
-                    href="#"
-                    ><b>Adventure</b> <span>(14)</span></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!-- END sidebar-box -->
-
-            <div class="p-3 shadow">
-              <h3 class="h5">Tags</h3>
-              <ul class="list-unstyled d-flex flex-wrap">
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Travel</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Adventure</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Food</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Lifestyle</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Business</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#"
-                    >Freelancing</a
-                  >
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Travel</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Adventure</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Food</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Lifestyle</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#">Business</a>
-                </li>
-                <li>
-                  <a class="m-1 btn btn-sm btn-secondary" href="#"
-                    >Freelancing</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- END sidebar -->
-        </div>
+        <!-- END sidebar -->
       </div>
-
-      <footer class="bg-dark text-white p-3 p-lg-5">
-        <div class="container">
-          <p class="text-center mb-0">
-            <!-- Link back to Alyra can't be removed. Template is licensed under CC BY 3.0. -->
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>
-            Made with
-            <i class="fa fa-heart text-danger" aria-hidden="true"></i> for Alyra
-          </p>
-        </div>
-      </footer>
-      <!-- END footer -->
     </div>
+
+    <footer class="bg-dark text-white p-3 p-lg-5">
+      <div class="container">
+        <p class="text-center mb-0">
+          <!-- Link back to Alyra can't be removed. Template is licensed under CC BY 3.0. -->
+          &copy;
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          Made with
+          <i class="fa fa-heart text-danger" aria-hidden="true"></i> for Alyra
+        </p>
+      </div>
+    </footer>
+    <!-- END footer -->
 
     <!-- loader -->
 

@@ -1,0 +1,10 @@
+body {
+  font-family: Montserrat;
+  font-weight: 300;
+}
+.site-logo,
+h1,
+h2,
+h3 {
+  font-family: Libre Baskerville, serif;
+}
