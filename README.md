@@ -1,4 +1,6 @@
-# Alyra Bootstrap Challenge - Custom Bootstrap5 build (sass -> c)
+# Alyra Bootstrap Challenge - Custom Bootstrap5 build
+
+(sass -> c)
 
 ## Step 0
 
