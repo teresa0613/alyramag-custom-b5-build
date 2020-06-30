@@ -1,6 +1,4 @@
-# Alyra Bootstrap Challenge
-
-Custom SASS build
+# Alyra Bootstrap Challenge - Custom Bootstrap5 build (sass -> css)
 
 [demo](https://alyra-bootstrap-chlng.netlify.app/)
 
