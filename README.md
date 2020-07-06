@@ -26,11 +26,11 @@ Dans le terminal lancer la commande `npm init`
 npm init
 ```
 
-La ligne de commande posera quelques questions, les réponses seront intégrées dans un nouveau fichier qui va se créer (tout seul) - `package.json`
+La ligne de commande posera quelques questions, les réponses seront intégrées dans un nouveau fichier qui va se créer (tout seul) - `package.json`.
 
 Pour l'instant les valeurs par défaut sont tout à fait ok, attention au "name" de votre projet - il doit être en minuscules, sans espaces, peut contenir "-" ou "\_".
 
-Le fichier `package.json` est un fichier très important, une sorte d'identifiant de projet et de son manifeste. Plus d'info [ici](https://docs.npmjs.com/creating-a-package-json-file)
+Le fichier `package.json` est un fichier très important, une sorte d'identifiant de projet et de son manifeste. Plus d'info [ici.](https://docs.npmjs.com/creating-a-package-json-file)
 
 Avant que nous passons à l'installation du bootstrap depuis npm, on devrait s'assurer d'avoir `node_modules` dans le fichier `.gitignore`. `.gitignore` spécifie les fichiers et/ou repertoires qui devraient pas être trackés par git.
 
@@ -52,6 +52,8 @@ Passons maintenant à l'installation de bootstrap, et plus précisement sa versi
 ```bash
 npm install --save-dev bootstrap@next
 ```
+
+Des nouveaux dossiers et fichiers apparaissent 💫
 
 ```bash
 ├── node_modules
