@@ -71,6 +71,8 @@ body {
 }
 ```
 
+On devrait appercevoir des nouveaux dossiers et fichiers comme dans l'aborescence ci-dessous
+
 ```bash
 ├── README.md
 ├── blog-single.html
@@ -117,7 +119,7 @@ after:
 
 Le fichier principal scss de bootstrap est le `bootstrap.scss` dans le dossier `scss`
 
-Il n'est pas une bonne pratique de modifier les fichier sources. C'est un règle générale.
+D'une manière générale, **il n'est pas une bonne pratique de modifier les fichier sources.** On ne touchera pas aux fichiers dans le dossier `scss.`
 
 Au lieu de le modifier, nous allons copier son contenu et le coller dans notre fichier `scss/bootstrap.scss`
 

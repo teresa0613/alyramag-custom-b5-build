@@ -1,0 +1,23 @@
+{
+  "name": "alyramag",
+  "version": "1.0.0",
+  "description": "## Step 0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pehaa/alyra-b5-challenge-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pehaa/alyra-b5-challenge-starter/issues"
+  },
+  "homepage": "https://github.com/pehaa/alyra-b5-challenge-starter#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
+    "popper.js": "^1.16.1"
+  }
+}
