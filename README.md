@@ -2,7 +2,7 @@
 
 ## Step 0
 
-Créer un dossier `custom`
+Créer un dossier `custom` dans la racine du projet `alyra-challenge-custom-b5`
 
 ```bash
 mkdir custom
@@ -18,7 +18,7 @@ touch custom/mybootstrap.scss
 
 ## Step 1
 
-Copier le dossier scss depuis les fichiers source de [Bootstrap 5](https://www.dropbox.com/s/q3hj2vzhkm6kkwl/Screenshot%202020-06-30%2012.46.45.png?dl=0)
+DCopier le dossier scss depuis les fichiers source de [Bootstrap 5](https://www.dropbox.com/s/q3hj2vzhkm6kkwl/Screenshot%202020-06-30%2012.46.45.png?dl=0) et coller-le dans la racine du projet `alyra-challenge-custom-b5`
 
 ![](https://wptemplates.pehaa.com/assets/alyra/b5source.png)
 
@@ -28,8 +28,9 @@ Copier le dossier scss depuis les fichiers source de [Bootstrap 5](https://www.d
 
 Configurer Sass Live Compiler
 
-- créer un dossier `.vscode`
-- créer un fichier `settings.json`
+- créer un dossier `.vscode` (dans la racine du projet `alyra-challenge-custom-b5` )
+- dedans créer un fichier `settings.json`
+- reprendre l'exemple de config depuis [la FAQ de plugin Live Sass Compiler](https://ritwickdey.github.io/vscode-live-sass-compiler/docs/faqs.html)
 - ajouter `"scss/**"` dans `"liveSassCompile.settings.excludeList"` (comme ci-dessus)
 
 ```
