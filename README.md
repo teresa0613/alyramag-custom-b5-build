@@ -188,7 +188,7 @@ Exemple 2 :
 ```scss
 $color: orange;
 $color: red !default;
-$colot: tomato;
+$color: tomato;
 
 body {
   background: $color;
