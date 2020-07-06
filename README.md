@@ -40,7 +40,14 @@ Si votre projet ne contient pas de fichier `.gitignore` vous pouvez le créer da
 touch .gitignore
 ```
 
-Passons maintenant à l'installation de bootstrap
+Voici un exemple de son contenu
+
+```
+.DS_Store
+node_modules
+```
+
+Passons maintenant à l'installation de bootstrap, et plus précisement sa version 5.0.0-alpha
 
 ```bash
 npm install --save-dev bootstrap@next
@@ -73,6 +80,14 @@ npm install --save-dev bootstrap@next
 │   │       ├── utilities
 │   │       └── vendor
 ```
+
+L'information sur les dépendences installées vient d'être ajoutée dans le fichier `package.json`. Maintenant votre projet **sait** de quoi il a besoin. Si vous supprimez le dossier `node_modules`, il suffit de taper dans le terminal
+
+```bash
+npm install
+```
+
+et tout ce dont votre projet a besoin, sera installé.
 
 ---
 
