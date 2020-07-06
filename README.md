@@ -1,5 +1,7 @@
 # Alyra Bootstrap Challenge - Custom Bootstrap5 CSS build
 
+## Prérequis : `node` et `npm` sont installés
+
 ## Step 0
 
 Créer un dossier `custom` dans la racine du projet `alyra-challenge-custom-b5`
@@ -18,9 +20,59 @@ touch custom/mybootstrap.scss
 
 ## Step 1
 
-DCopier le dossier scss depuis les fichiers source de [Bootstrap 5](https://www.dropbox.com/s/q3hj2vzhkm6kkwl/Screenshot%202020-06-30%2012.46.45.png?dl=0) et coller-le dans la racine du projet `alyra-challenge-custom-b5`
+Dans le terminal lancer la commande `npm init`
 
-![](https://wptemplates.pehaa.com/assets/alyra/b5source.png)
+```bash
+npm init
+```
+
+La ligne de commande posera quelques questions, les réponses seront intégrées dans un nouveau fichier qui va se créer (tout seul) - `package.json`
+
+Pour l'instant les valeurs par défaut sont tout à fait ok, attention au "name" de votre projet - il doit être en minuscules, sans espaces, peut contenir "-" ou "\_".
+
+Le fichier `package.json` est un fichier très important, une sorte d'identifiant de projet et de son manifeste. Plus d'info [ici](https://docs.npmjs.com/creating-a-package-json-file)
+
+Avant que nous passons à l'installation du bootstrap depuis npm, on devrait s'assurer d'avoir `node_modules` dans le fichier `.gitignore`. `.gitignore` spécifie les fichiers et/ou repertoires qui devraient pas être trackés par git.
+
+Si votre projet ne contient pas de fichier `.gitignore` vous pouvez le créer dans la racine du projet
+
+```bash
+touch .gitignore
+```
+
+Passons maintenant à l'installation de bootstrap
+
+```bash
+npm install --save-dev bootstrap@next
+```
+
+```bash
+├── node_modules
+│   ├── bootstrap
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── css
+│   │   │   └── js
+│   │   ├── js
+│   │   │   ├── dist
+│   │   │   └── src
+│   │   ├── package.json
+│   │   └── scss
+│   │       ├── _alert.scss
+│   │       ├── _badge.scss
+│   │       ├── ...
+│   │       ├── _variables.scss
+│   │       ├── bootstrap-grid.scss
+│   │       ├── bootstrap-reboot.scss
+│   │       ├── bootstrap-utilities.scss
+│   │       ├── bootstrap.scss
+│   │       ├── forms
+│   │       ├── helpers
+│   │       ├── mixins
+│   │       ├── utilities
+│   │       └── vendor
+```
 
 ---
 
@@ -31,7 +83,7 @@ Configurer Sass Live Compiler
 - créer un dossier `.vscode` (dans la racine du projet `alyra-challenge-custom-b5` )
 - dedans créer un fichier `settings.json`
 - reprendre l'exemple de config depuis [la FAQ de plugin Live Sass Compiler](https://ritwickdey.github.io/vscode-live-sass-compiler/docs/faqs.html)
-- ajouter `"scss/**"` dans `"liveSassCompile.settings.excludeList"` (comme ci-dessus)
+- rien à ajouter, `node_modules` où se trouvent fichiers scss de bootstrap sont déjà exclus
 
 ```
 {
@@ -49,8 +101,7 @@ Configurer Sass Live Compiler
     ],
     "liveSassCompile.settings.excludeList": [
        "**/node_modules/**",
-       ".vscode/**",
-       "scss/**"
+       ".vscode/**"
     ],
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": [
@@ -88,9 +139,10 @@ On devrait appercevoir des nouveaux dossiers et fichiers comme dans l'aborescenc
 │       ├── mybootstrap.min.css
 │       └── mybootstrap.min.css.map
 ├── images
+├── node_modules
 ├── index.html
+├── package.json
 ├── screenshots
-├── scss
 └── style.css
 ```
 
@@ -127,19 +179,17 @@ Il nous restera à corriger les chemins vers les fichiers partials.
 
 ```scss
 // custom/mybootstrap.scss
-@import "../scss/functions";
-@import "../scss/variables";
-@import "../scss/mixins";
-@import "../scss/utilities";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
 ...
 ```
 
 Astuce: vous pouvez vous servir de la fonctionnalité "Replace" de VSCode Alt+Cmd/Ctrl+F
 
 cherche : @import "  
-replace with : @import "../scss/
-
-![](https://wptemplates.pehaa.com/assets/alyra/replace.png)
+replace with : @import "../node_modules/bootstrap/scss/
 
 ## Step 6
 
@@ -148,12 +198,12 @@ Commentez les partials dont vous vous ne servez pas.
 ```scss
 // custom/mybootstrap.scss
 ...
-// @import "../scss/toasts";
-// @import "../scss/modal";
-// @import "../scss/tooltip";
-// @import "../scss/popover";
-@import "../scss/carousel";
-// @import "../scss/spinners";
+// @import "../node_modules/bootstrap/scss/toasts";
+// @import "../node_modules/bootstrap/scss/modal";
+// @import "../node_modules/bootstrap/scss/tooltip";
+// @import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/scss/carousel";
+// @import "../node_modules/bootstrap/scss/spinners";
 ...
 
 ```
