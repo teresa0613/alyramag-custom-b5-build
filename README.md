@@ -190,9 +190,9 @@ after:
 
 Le fichier principal scss de bootstrap est le `bootstrap.scss` dans le dossier `node_modules/bootstrap/scss/`
 
-D'une manière générale, **il n'est pas une bonne pratique de modifier les fichier sources.** On ne touchera jamais aux fichiers dans le dossier `node_modules.`
+D'une manière générale, **il n'est pas une bonne pratique de modifier les fichier sources.** On ne touchera **jamais** aux fichiers dans le dossier `node_modules.`
 
-Au lieu de le modifier, nous allons copier le contenu du fichier `node_modules/bootstrap/scss/bootstrap.scss` et le coller dans notre fichier `scss/bootstrap.scss`
+Au lieu de le modifier, nous allons copier le contenu du fichier `node_modules/bootstrap/scss/bootstrap.scss` et le coller dans notre fichier `custom/mybootstrap.scss`
 
 Il nous restera à corriger les chemins vers les fichiers partials.
 
