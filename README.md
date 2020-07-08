@@ -20,6 +20,8 @@ touch custom/mybootstrap.scss
 
 ## Step 1
 
+Nous allons installer bootstrap depuis [npm](https://www.youtube.com/watch?v=ZNbFagCBlwo)
+
 Dans le terminal lancer la commande `npm init`
 
 ```bash
