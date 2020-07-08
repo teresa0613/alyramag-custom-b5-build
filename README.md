@@ -20,6 +20,8 @@ touch custom/mybootstrap.scss
 
 ## Step 1
 
+Nous allons installer bootstrap depuis [npm](https://www.youtube.com/watch?v=ZNbFagCBlwo)
+
 Dans le terminal lancer la commande `npm init`
 
 ```bash
@@ -100,7 +102,7 @@ Configurer Sass Live Compiler
 - créer un dossier `.vscode` (dans la racine du projet `alyra-challenge-custom-b5` )
 - dedans créer un fichier `settings.json`
 - reprendre l'exemple de config depuis [la FAQ de plugin Live Sass Compiler](https://ritwickdey.github.io/vscode-live-sass-compiler/docs/faqs.html)
-- rien à ajouter, `node_modules` où se trouvent fichiers scss de bootstrap sont déjà exclus
+- notez que `node_modules` où se trouvent fichiers scss de bootstrap sont exclus, et c'est tout à fait souhaité
 
 ```
 {
@@ -186,11 +188,11 @@ after:
 
 ## Step 5
 
-Le fichier principal scss de bootstrap est le `bootstrap.scss` dans le dossier `scss`
+Le fichier principal scss de bootstrap est le `bootstrap.scss` dans le dossier `node_modules/bootstrap/scss/`
 
-D'une manière générale, **il n'est pas une bonne pratique de modifier les fichier sources.** On ne touchera pas aux fichiers dans le dossier `scss.`
+D'une manière générale, **il n'est pas une bonne pratique de modifier les fichier sources.** On ne touchera jamais aux fichiers dans le dossier `node_modules.`
 
-Au lieu de le modifier, nous allons copier son contenu et le coller dans notre fichier `scss/bootstrap.scss`
+Au lieu de le modifier, nous allons copier le contenu du fichier `node_modules/bootstrap/scss/bootstrap.scss` et le coller dans notre fichier `scss/bootstrap.scss`
 
 Il nous restera à corriger les chemins vers les fichiers partials.
 
@@ -207,6 +209,8 @@ Astuce: vous pouvez vous servir de la fonctionnalité "Replace" de VSCode Alt+Cm
 
 cherche : @import "  
 replace with : @import "../node_modules/bootstrap/scss/
+
+![](https://wptemplates.pehaa.com/assets/alyra/replace-nm.png)
 
 ## Step 6
 
