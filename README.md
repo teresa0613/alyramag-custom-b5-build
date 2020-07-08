@@ -210,6 +210,8 @@ Astuce: vous pouvez vous servir de la fonctionnalité "Replace" de VSCode Alt+Cm
 cherche : @import "  
 replace with : @import "../node_modules/bootstrap/scss/
 
+![](https://wptemplates.pehaa.com/assets/alyra/replace-nm.png)
+
 ## Step 6
 
 Commentez les partials dont vous vous ne servez pas.
